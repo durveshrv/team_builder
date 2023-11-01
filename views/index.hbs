@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+	<title>Project.io| Home </title>
+	<link rel="stylesheet" type="text/css" href="static/homeanim.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/solid.min.css"
+	  integrity="sha512-6mc0R607di/biCutMUtU9K7NtNewiGQzrvWX4bWTeqmljZdJrwYvKJtnhgR+Ryvj+NRJ8+NnnCM/biGqMe/iRA=="
+	  crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- Animate on Scroll CDN-->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+	<nav class=" flex justify-between px-24 pb-50 h-16  pt-5 ">
+		<div class="text-4xl font-extrabold text-blue-900  items-center">Project.io </div>
+		<div class="items-center justify-around">
+			<a href="#" class="text-xl px-4">Home</a>
+			<a href="#" class="text-xl px-4">About</a>
+			<a href="#" class="text-xl px-4">Blog</a>
+			<a href="#" class="text-xl px-4">Contact</a>
+			<!-- <a href="#" class="text-xl px-4 bg-blue-600 py-2 text-white hover:bg-blue-800 rounded-md">Login</a> -->
+			<button class="bg-blue-600 px-6 py-4 text-white rounded-lg border-none  hover:bg-blue-800 outline-none font-semibold " id="#Logbtn" onclick="login()" >Login</button>
+		</div>
+
+		
+	</nav>
+	<div class=" z-10  bg-white h-full w-full  items-center justify-center bg-opacity-50 hidden absolute top-0 right-0" id="#loginpop">
+		<div class="m-10 space-x-5 flex" >
+		  <a href="/signup_signin " class="bg-blue-600 border-none text-white font-semibold p-4  rounded-xl"> Get Started </a>
+		 
+		</div>
+	  </div>
+
+	<header class="flex  justify-around items-center bg-g">
+        <div class="w-3/5 animate__animated animate__fadeIn  animate__delay-1s">
+            <img src="Images\front.webp">
+        </div>
+				<div class="pl-20 w-2/5 animate__animated animate__jackInTheBox">
+							<h1 class="text-4xl">Welcome to <span class="text-blue-600 font-bold"> Project.io </span></h1>
+							<div class="p-5">
+								<ul  class="font-sans space-y-5">
+									<li></li>
+									<li><span class="text-slate-900 font-bold">Revolutionize</span> Your Project Management. Join the Future of Collaborative Work.</li>	
+									<li><span class="text-slate-900 font-bold"> </span>🚀 Streamline Projects
+                                        <li>🤝 Build Dynamic Teams</li>
+                                       <li> 🔥 Boost Efficiency</li>
+                                      <li>  🏆 Achieve Success </li>
+								</ul>
+
+								
+								
+							</div>
+							<h3 class="text-xl ">We are here with <span class="text-blue-600 font-bold"> Project.io  </span> to help you ! </h3>
+                            <h2>Join Us Today and Transform How You Manage Projects!"</h2>
+						
+						
+						<br>
+						<button class="relative group overflow-hidden px-6 h-12 rounded-full flex space-x-2 items-center bg-gradient-to-r from-pink-500 to-purple-500 hover:to-purple-600 "onclick="login()">
+                            <a href="/signup_signin"><span class="relative text-sm text-white">Get Started</span></a>
+							
+							<div class="flex items-center -space-x-3 translate-x-3">
+							  <div class="w-2.5 h-[1.6px] rounded bg-white origin-left scale-x-0 transition duration-300 group-hover:scale-x-100"></div>
+							  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-white -translate-x-2 transition duration-300 group-hover:translate-x-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+							  </svg>
+							</div>
+						  </button>
+				  
+						
+				</div>
+				
+	</header>
+
+	
+	  <!-- End of About Section -->
+  
+	  <!-- Team Section -->
+	  <section class="pt-20 pb-48 bg-gray-200 ">
+		<!-- Section Container -->
+		<div class="container mx-auto px-4">
+		  <!-- Text Box -->
+		  <div class="flex flex-wrap justify-center text-center mb-24">
+			<div class="w-full lg:w-6/12 px-4">
+			  <h2 class="text-4xl font-semibold">Here are our Teams</h2>
+			  <p class="text-lg leading-relaxed m-4 text-gray-600">
+				Our team Helps the Students to find their appropriate Jobs and Helps the RecrutiersTo find Appropriate Candidates . We are professionals devlopers with 0+
+				years experience on
+				this business area. We can make your business grow.
+			  </p>
+			</div>
+		  </div>
+		  <!-- Flex Row Container -->
+		  <div class="flex flex-wrap justify-between items-center">
+			<!-- Item -->
+			<div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4" data-aos="fade-in">
+			  <div class="px-6">
+				<!-- Image -->
+				<img alt="Team Lead" src="Images/boy.png"
+				  class="shadow-lg rounded-full max-w-full mx-auto" style="max-width: 120px;" />
+				<div class="pt-6 text-center">
+				  <h5 class="text-xl font-bold">Atharva Jadhav</h5>
+				  <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+					Project lead & Founder
+				  </p>
+				  <!-- Social Media Buttons -->
+				  <div class="mt-6">
+					<button class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+					  type="button">
+					  <!-- Icon -->
+					  <i class="fab fa-twitter"></i>
+					</button>
+					<button class="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+					  type="button">
+					  <!-- Icon -->
+					 
+						<i class=" fab fa-facebook-f"></i>
+					  </a>
+					</button>
+					<button class="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+					  type="button">
+					  <!-- Icon -->
+					  <i class="fab fa-dribbble"></i>
+					</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			<!-- Item -->
+			<div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4" data-aos="fade-in" data-aos-delay="400">
+			  <div class="px-6">
+				<!-- Image -->
+				<img alt="..."
+				  src=Images/girl.png
+				  class="shadow-lg rounded-full max-w-full mx-auto" style="max-width: 120px;" />
+				<div class="pt-6 text-center">
+				  <h5 class="text-xl font-bold">Harshada</h5>
+				  <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+					Project lead & Founder
+				  </p>
+				  <!-- Social Media Buttons -->
+				  <div class="mt-6">
+					<button class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+					  type="button">
+					  <!-- Icon -->
+					  <i class="fab fa-google"></i>
+					</button>
+					<button class="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+					  type="button">
+					  <!-- Icon -->
+					
+						<i class=" fab fa-facebook-f"></i>
+					  </a>
+  
+					</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			<!-- Item -->
+			<div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4" data-aos="fade-in" data-aos-delay="600">
+			  <div class="px-6">
+				<!-- Image -->
+				<img alt="..." src=Images/user.png
+				  class="shadow-lg rounded-full max-w-full mx-auto" style="max-width: 120px;" />
+				<div class="pt-6 text-center">
+				  <h5 class="text-xl font-bold">Darpan</h5>
+				  <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+					Project lead & Founder 
+				  </p>
+				  <!-- Social Media Buttons -->
+				  <div class="mt-6">
+					<button class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+					  type="button">
+					  <!-- Icon -->
+					  <i class="fab fa-google"></i>
+					</button>
+					<button class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+					  type="button">
+					  <!-- Icon -->
+					  <i class="fab fa-twitter"></i>
+					</button>
+					<button class="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+					  type="button">
+					  <!-- Icon -->
+					  <i class="fab fa-instagram"></i>
+					</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			<!-- Item -->
+			
+	  </section>
+	  <!-- End of Team Section -->
+  
+	  <!-- Contact Section -->
+	  <section class="pb-20 relative block bg-gray-900">
+		<!-- Making Polygon Shape in Background -->
+		<div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+		  style="height: 80px; transform: translateZ(0);">
+		  <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+			version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+			<polygon class="text-gray-900 fill-current" points="2560 0 2560 100 0 100"></polygon>
+		  </svg>
+		</div>
+		<!-- Section Container -->
+		<div class="container mx-auto px-4 lg:pt-24 lg:pb-64">
+		  <!-- Text Box -->
+		  <div class="flex flex-wrap text-center justify-center">
+			<div class="w-full lg:w-6/12 px-4">
+			  <h2 class="text-4xl font-semibold text-white">Plan you Business Today!</h2>
+			  <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
+				With our extensive network of partners and suppliers, we can offer appropriate Job offers 
+			  </p>
+			</div>
+		  </div>
+		  <!-- Flex Row Container -->
+		  <div class="flex flex-wrap mt-12 justify-center">
+			<!-- Item -->
+			<div class="w-full lg:w-3/12 px-4 text-center" data-aos="fade-in" data-aos-delay="600">
+			  <div
+				class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+				<!-- Icon -->
+				<i class="fas fa-medal text-xl"></i>
+			  </div>
+			  <!-- Text Box -->
+			  <h5 class="text-xl mt-5 font-semibold text-white">
+				Excellent Services
+			  </h5>
+			  <p class="mt-2 mb-4 text-gray-500">
+				<!-- Some quick example text to build on the card title and make up
+				the bulk of the card's content. -->
+			  </p>
+			</div>
+			<!-- Item -->
+			<div class="w-full lg:w-3/12 px-4 text-center" data-aos="fade-in" data-aos-delay="400">
+			  <div
+				class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+				<!-- Icon -->
+				<i class="fas fa-poll text-xl"></i>
+			  </div>
+			  <!-- Text Box -->
+			  <h5 class="text-xl mt-5 font-semibold text-white">
+				Grow your Skills
+			  </h5>
+			  <p class="mt-2 mb-4 text-gray-500">
+				<!-- Some quick example text to build on the card title and make up
+				the bulk of the card's content. -->
+			  </p>
+			</div>
+			<!-- Item -->
+			<div class="w-full lg:w-3/12 px-4 text-center" data-aos="fade-in" data-aos-delay="200">
+			  <div
+				class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+				<!-- Icon -->
+				<i class="fas fa-lightbulb text-xl"></i>
+			  </div>
+			  <!-- Text Box -->
+			  <h5 class="text-xl mt-5 font-semibold text-white">Your's ideas into Reality</h5>
+			  <p class="mt-2 mb-4 text-gray-500">
+				<!-- Some quick example text to build on the card title and make up
+				the bulk of the card's content. -->
+			  </p>
+			</div>
+		  </div>
+		</div>
+	  </section>
+	  <!-- Contact Form -->
+	  <section class="relative block py-24 lg:pt-0 bg-gray-900">
+		<!-- Container -->
+		<div class="container mx-auto px-4" data-aos="fade-in">
+		  <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
+			<div class="w-full lg:w-6/12 px-4">
+			  <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300">
+				<div class="flex-auto p-5 lg:p-10">
+				  <h4 class="text-2xl font-semibold">Want to work with us?</h4>
+				  <p class="leading-relaxed mt-1 mb-4 text-gray-600">
+					Complete this form and we will get back to you in 24 hours.
+				  </p>
+				  <!-- Name -->
+				  <div class="relative w-full mb-3 mt-8">
+					<label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="full-name">
+					  Full Name
+					</label><input type="text"
+					  class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+					  placeholder="Full Name" style="transition: all 0.15s ease 0s;" />
+				  </div>
+				  <!-- Email -->
+				  <div class="relative w-full mb-3">
+					<label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="email">
+					  Email
+					</label><input type="email"
+					  class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+					  placeholder="Email" style="transition: all 0.15s ease 0s;" />
+				  </div>
+				  <!-- Message -->
+				  <div class="relative w-full mb-3">
+					<label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="message">
+					  Message
+					</label><textarea rows="4" cols="80"
+					  class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+					  placeholder="Type a message..."></textarea>
+				  </div>
+				  <div class="text-center mt-6">
+					<button
+					  class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+					  type="button" style="transition: all 0.15s ease 0s;">
+					  Send Message
+					</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section>
+	  <!-- End of Contact Section -->
+	</main>
+  
+	<!-- Footer Section -->
+	<footer class="relative bg-gray-300 pt-8 pb-6">
+	  <!-- Making Polygon Shape in Background -->
+	  <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+		style="height: 80px; transform: translateZ(0);">
+		<svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+		  version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+		  <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+		</svg>
+	  </div>
+	  <!-- Section Container -->
+	  <div class="container mx-auto px-4">
+		<!-- Text Box Container -->
+		<div class="flex flex-wrap">
+		  <div class="w-full lg:w-6/12 px-4">
+			<h4 class="text-3xl font-semibold">Let's keep in touch!</h4>
+			<h5 class="text-lg mt-0 mb-2 text-gray-700">
+			  Contact-us: 9841######
+			</h5>
+			<!-- Social Media Buttons -->
+			<div class="mt-6">
+			  <a href="" target="_blank"><i
+				  class="fab fa-twitter  bg-white text-blue-400 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
+			  <a href="" target="_blank"><i
+				  class="fab fa-facebook-square bg-white text-blue-600 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
+			  <a href="" target="_blank"><i
+				  class="fab fa-dribbble bg-white text-pink-400 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
+  
+			</div>
+		  </div>
+		  <!-- List Container -->
+		  <div class="w-full lg:w-6/12 px-4">
+			<div class="flex flex-wrap items-top mb-6">
+			  <!-- List 1 -->
+			  <div class="w-full lg:w-4/12 px-4 ml-auto">
+				<span class="block uppercase text-gray-600 text-sm font-semibold mb-2">Useful Links</span>
+				<ul class="list-unstyled">
+				  <li>
+					<a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+					  href="">About Us</a>
+				  </li>
+				  <li>
+					<a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+					  href="">Blog</a>
+				  </li>
+  
+				  <li>
+					<a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+					  href="">Free Products</a>
+				  </li>
+				</ul>
+			  </div>
+			  <!-- List 2 -->
+			  <div class="w-full lg:w-4/12 px-4">
+				<span class="block uppercase text-gray-600 text-sm font-semibold mb-2">Other Resources</span>
+				<ul class="list-unstyled">
+  
+				  <li>
+					<a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+					  href="">Terms &amp; Conditions</a>
+				  </li>
+				  <li>
+					<a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+					  href="">Privacy Policy</a>
+				  </li>
+				  <li>
+					<a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+					  href="">Contact Us</a>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<!-- Line Break -->
+		<hr class="my-6 border-gray-400" />
+		<!-- Footer Text -->
+		<div class="flex flex-wrap items-center md:justify-between justify-center">
+		  <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+			<div class="text-sm text-gray-600 font-semibold py-1">
+			  Copyright © 2023 atharvaj898@gmail.com!
+			  <a href="" class="text-gray-600 hover:text-gray-900">ADJ</a>.
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</footer>
+	<!-- End of Footer Section -->
+  </body>
+  <!-- Navigation Script -->
+  <!-- AOS animatin on scroll ext src -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+	AOS.init({
+	  delay: 200, // values from 0 to 3000, with step 50ms
+	  duration: 1500, // values from 0 to 3000, with step 50ms
+	  once: false, // whether animation should happen only once - while scrolling down
+	  mirror: false, // whether elements should animate out while scrolling past them
+	  anchorPlacement: 'top-bottom',
+	});
+  </script>
+  
+  <script>
+	function toggleNavbar(collapseID) {
+	  document.getElementById(collapseID).classList.toggle("hidden");
+	  document.getElementById(collapseID).classList.toggle("block");
+	}
+  </script>
+  
+  </html>
+
+	<!-- <div class="ftr"></div>
+<div class="ftr flex items-center justify-center  font-bold bg-white  h-20  "> 
+    <footer class="space-x-8 ">
+    <a href="#"  class="hover:text-blue"></a>
+    <a href="https://www.instagram.com/pict.pune/?hl=en&__coig_restricted=1" class="hover:text-blue-500">Instagram</a>
+    <a href="https://in.linkedin.com/company/tnpcellpict" class="hover:text-blue-500">LinkedIn</a>
+    <a href="https://twitter.com/PunePict" class="hover:text-blue-500">Twitter</a>
+    <a href="https://www.facebook.com/PICTOfficial/" class="hover:text-blue-500">Facebook</a>
+    <a href="https://pict.edu/placement/" class="hover:text-blue-500">PICT</a>
+    <a href="#" class="hover:text-blue-500 "><p>	&copy; PICT 2023</p></a>
+</footer>
+
+</div> -->
+<script>
+function logindisplay(){
+document.getElementById("loginpop").classList.remove("hidden");
+
+}
+</script>
+<script>
+    function login() {
+      window.location.href = "/signup_signin";
+    }
+  </script>
+</body>
+</html>

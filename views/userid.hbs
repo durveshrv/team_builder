@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Input Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Input Page</h1>
+        <form action="/update" >
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            <br>
+            <input type="submit" value="Submit" onclick="update()">
+            {{#if mesg}}
+            <h3>Invlid Uername</h3>
+            {{/if}}
+        </form>
+    </div>
+</body>
+<script>
+  function update() {
+    // Get the username from the input field
+    const username = document.getElementById('usernameInput').value;
+
+    // Make a GET request to your Node.js route, passing the username as a query parameter
+    fetch(`/update?username=${username}`)
+      .then(response => {
+        if (response.ok) {
+          // Handle the response, e.g., redirect to a new page
+          window.location.href = response.url;
+        } else {
+          console.error('Error sending data to the server.');
+        }
+      })
+      .catch(error => {
+        console.error('Network error:', error);
+      });
+  }
+</script>
+
+</html>

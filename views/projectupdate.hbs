@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Project Form</title>
+    <!-- Add the Tailwind CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Your "Add Project" form here -->
+    <div class="items-center font-bold text-center text-3xl bg-gray-200 text-blue-400 p-8 flex items-center justify-center"><div class="bg-gray-100 p-9 px-20"><h5 class="items-center ">Update Project</h5></div></div>
+
+
+    <div class="bg-gray-200 min-h-screen flex items-center justify-center">
+        <form action="/update_project" method="post" class="bg-white p-8 rounded-lg shadow-md w-6/12">
+          <!-- Project Name -->
+          {{#data}}
+          <div class="mb-4">
+            <label for="project-name" class="block font-bold text-gray-700">Project Name:</label>
+            <input type="text" id="project-name" name="projectname" value="{{projectname}}" placeholder="Eg. New Website Project" required
+                   class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500">
+          </div>
+      
+          <!-- Project Leader ID (You can customize this) -->
+          <div class="mb-4">
+            <label for="project-leader" class="block font-bold text-gray-700">Username:</label>
+            <input type="text" id="project-leader" name="projectleadername" value="{{projectleadername}}" placeholder="Project Leader's ID" required
+                   class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500" readonly>
+          </div>
+          
+          <div class="mb-4">
+            <label for="project-leader" class="block font-bold text-gray-700">Email</label>
+            <input type="email" id="project-leader email" name="projectleaderemail" value="{{projectleaderemail}}" placeholder="abc@gmail.com" required
+                   class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500" readonly>
+          </div>
+          <!-- Project Domain -->
+          <div class="mb-4">
+            <label for="project-domain" class="block font-bold text-gray-700">Project Domain:</label>
+            <input type="text" id="project-domain" name="projectdomain" value="{{projectdomain}}" placeholder="Eg. Web Development" required
+                   class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500">
+          </div>
+      
+          <!-- Project Description -->
+          <div class="mb-4">
+            <label for="project-description" class="block font-bold text-gray-700">Project Description:</label>
+            <input type="text" id="project-description" name="projectdescription" value="{{projectdescription}}" placeholder="Describe your project" rows="4"
+                      class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500">
+          </div>
+      
+          <!-- Status -->
+          <div class="mb-4">
+            <h4 class="font-bold">Previous Status: </h4>{{status}}
+            <label for="status" class="block font-bold text-gray-700">Status:</label>
+            <select id="status" name="status"
+                    class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500">
+              <option value="Pending">Pending</option>
+              <option value="In Progress">In Progress</option>
+              <option value="Completed">Completed</option>
+            </select>
+          </div>
+          {{/data}}
+          <!-- Vacancy -->
+           {{#data1}}
+          <div class="mb-4">
+            <label class="block font-bold text-gray-700">Vacancies:</label>
+            <div class="space-y-4" id="vacancy-container">
+              <!-- Vacancy 1 -->
+              <div class="mb-4">
+                <label for="vacancy-title-1" class="block text-gray-700">Vacancy Titles:</label>
+                <input type="text" id="vacancy-title-1" value="{{vacancytitle}}" name="vacancy_title" placeholder="Eg. Senior Web Developer" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500" required>
+              </div>
+              <div class="mb-4">
+                <label for="vacancy-number-1" class="block text-gray-700">Vacancy Positions:</label>
+                <input type="number" id="vacancy-number-1" value="{{vacancynumber}}" name="vacancy_number" placeholder="Number of Vacancies" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500" required>
+              </div>
+              <div class="mb-4">
+                <label for="vacancy-description-1" class="block text-gray-700">Vacancy Description:</label>
+                <input type="text" id="vacancy-description-1" value="{{vacancydescription}}" name="vacancy_description" placeholder="Description of the vacancy" rows="4" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500" required>
+              </div>
+              {{/data1}}
+          <!-- Submit Button -->
+          <div class="mt-6">
+            <button type="submit" class="w-full px-4 py-2 font-bold text-white bg-blue-500 rounded-lg hover:bg-blue-600">
+              Update Project
+            </button>
+          </div>
+        </form>
+      </div>
+      
+</body>
+</html>
